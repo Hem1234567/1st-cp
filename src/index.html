@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PEC Hacks | Hackathon</title>
+  <link rel="icon" type="image/png" href="./pechacks favicon.png" />
+  <link href="./output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    .gradient-text {
+      background: linear-gradient(135deg, #a855f7, #ec4899, #f59e0b);
+      background-size: 200% 200%;
+      animation: gradient-shift 4s ease infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    @keyframes gradient-shift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .coming-soon-glow {
+      animation: coming-soon-pulse 3s ease-in-out infinite;
+    }
+
+    @keyframes coming-soon-pulse {
+      0%, 100% {
+        text-shadow: 0 0 20px rgba(168, 85, 247, 0.8);
+        transform: scale(1);
+      }
+      50% {
+        text-shadow: 0 0 40px rgba(168, 85, 247, 1), 0 0 60px rgba(236, 72, 153, 0.6);
+        transform: scale(1.05);
+      }
+    }
+
+
+    .glow-hover {
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+.glow-hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1; 
+  opacity: 0;
+  border-radius: 1rem;
+  transition: opacity 0.4s ease;
+  background: radial-gradient(
+    circle at center,
+    rgba(168, 85, 247, 0.5),
+    rgba(236, 72, 153, 0.4),
+    rgba(245, 158, 11, 0.4)
+  );
+  filter: blur(60px);
+  transform: scale(1.1);
+  pointer-events: none;
+}
+
+.glow-hover:hover::before {
+  opacity: 1;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 2px #a855f7; 
+  color: transparent;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-black to-purple-900 text-white text-center py-3">
+    <header class="sticky top-0 z-50 bg-transparent backdrop-blur-md border-b border-transparent mb-2">
+        <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-2">
+          <a href="#" class="flex items-center space-x-2">
+            <img src="./pechacks bgr.png" alt="Logo" class="h-8"> 
+          </a>
+        </nav>
+      </header>
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-6xl md:text-8xl font-black gradient-text mb-2">PEC HACKS</h2>
+      <div class="text-4xl md:text-6xl font-bold text-stroke mb-6">3.0</div>
+      <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-12">
+        Where Innovation Meets <span class="text-purple-400 font-semibold">Excellence</span> in Tamil Nadu's Premier Hackathon
+      </p>
+  
+      <div class="mb-16">
+        <div class="bg-black/40 backdrop-blur-md border border-white/10 rounded-full px-12 py-6 inline-block">
+          <p class="text-3xl md:text-5xl font-bold text-purple-400 coming-soon-glow">
+            COMING SOON
+          </p>
+        </div>
+      </div>
+  
+      <div class="grid md:grid-cols-3 gap-6 mb-8 relative">
+        <a href="https://pechacks.org/"
+          class="glow-hover bg-transparent border border-gray-700 text-white px-6 py-6 rounded-xl transition duration-300">
+          <div class="flex flex-col items-center space-y-2">
+            <i class="fas fa-external-link-alt text-xl group-hover:scale-110 transition-transform"></i>
+            <span class="text-lg">Previous Edition</span>
+            <span class="text-sm text-gray-400">Explore PEC HACKS 2.0</span>
+          </div>
+        </a>
+      
+        <a href="#"
+          class="glow-hover bg-transparent border border-gray-700 text-white px-6 py-6 rounded-xl transition duration-300">
+          <div class="flex flex-col items-center space-y-2">
+            <i class="fas fa-clipboard-check text-xl group-hover:scale-110 transition-transform"></i>
+            <span class="text-lg">Pre-Register Here</span>
+            <span class="text-sm text-gray-400">Reserve Your Spot</span>
+          </div>
+        </a>
+      
+        <a href="https://chat.whatsapp.com/FtFHlapbGqPBxtZomqR5Km"
+          class="glow-hover bg-transparent border border-gray-700 text-white px-6 py-6 rounded-xl transition duration-300">
+          <div class="flex flex-col items-center space-y-2">
+            <i class="fas fa-users text-xl group-hover:scale-110 transition-transform"></i>
+            <span class="text-lg">Community</span>
+            <span class="text-sm text-gray-400">Join the Network</span>
+          </div>
+        </a>
+      </div>
+      
+  
+      
+    </div>
+    <div class="flex items-center gap-6 text-white text-2xl justify-center">
+        <a href="https://twitter.com/yourprofile" target="_blank">
+          <i class="fa-brands fa-x-twitter  hover:text-gray-400 cursor-pointer"></i>
+        </a>
+        <a href="https://instagram.com/yourprofile" target="_blank">
+          <i class="fa-brands fa-instagram hover:text-gray-400 cursor-pointer"></i>
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">
+          <i class="fa-brands fa-linkedin-in hover:text-gray-400 cursor-pointer"></i>
+        </a>
+      </div>
+      
+  </body>
+</html>
